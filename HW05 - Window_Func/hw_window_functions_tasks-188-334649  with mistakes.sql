@@ -42,45 +42,45 @@ USE WideWorldImporters
 SET STATISTICS TIME, IO ON;
 
 SELECT
-i.InvoiceID AS 'Код продажи',
-c.CustomerName AS 'Имя клиента',
-i.InvoiceDate AS 'Дата продажи',
-il.Quantity * il.UnitPrice AS 'Сумма продажи',
-(SELECT SUM(il2.Quantity * il2.UnitPrice)
-FROM Sales.InvoiceLines il2
-JOIN Sales.Invoices i2
-ON il2.InvoiceID = i2.InvoiceID 
-WHERE YEAR(i2.InvoiceDate)*100+MONTH(i2.InvoiceDate)<=
-YEAR(i.InvoiceDate)*100+MONTH(i.InvoiceDate)
-AND i2.InvoiceDate >= '2015-01-01') AS 'Нарастающая сумма'
+    i.InvoiceID AS 'Код продажи',
+    c.CustomerName AS 'Имя клиента',
+    i.InvoiceDate AS 'Дата продажи',
+	 ol.Quantity,
+    ol.Quantity * ol.UnitPrice AS 'Сумма продажи',
+    (SELECT SUM(ol2.Quantity * ol2.UnitPrice)
+     FROM Sales.Invoices i2
+     JOIN Sales.OrderLines ol2 
+     ON i2.OrderID = ol2.OrderID
+     WHERE MONTH(i2.InvoiceDate) <= MONTH(i.InvoiceDate)) AS 'Нарастающая сумма'
 FROM Sales.Invoices i
 JOIN Sales.Customers c 
 ON i.CustomerID = c.CustomerID
-JOIN Sales.InvoiceLines il 
-ON i.InvoiceID = il.InvoiceID
+JOIN Sales.OrderLines ol 
+ON i.OrderID = ol.OrderID
 WHERE i.InvoiceDate >= '2015-01-01'
-ORDER BY i.InvoiceDate;                                   
+ORDER BY i.InvoiceDate;
 
 /*
 2. Сделайте расчет суммы нарастающим итогом в предыдущем запросе с помощью оконной функции.
    Сравните производительность запросов 1 и 2 с помощью set statistics time, io on
 */
 
+set statistics time, io on
 SELECT
 i.InvoiceID AS 'Код продажи',
 c.CustomerName AS 'Имя клиента',
 i.InvoiceDate AS 'Дата продажи',
-il.Quantity*il.UnitPrice AS 'Сумма продажи',
-SUM(il.Quantity*il.UnitPrice)
-OVER(ORDER BY YEAR(i.InvoiceDate), MONTH(i.InvoiceDate)
-) AS 'Нарастающая сумма'
+ol.Quantity,
+ol.Quantity*ol.UnitPrice AS 'Сумма продажи',
+SUM(ol.Quantity*ol.UnitPrice)
+OVER(PARTITION BY YEAR(i.InvoiceDate)*100+MONTH(i.InvoiceDate)) AS 'Нарастающая сумма'
 FROM Sales.Invoices i
 JOIN Sales.Customers c 
 ON i.CustomerID=c.CustomerID
-JOIN Sales.InvoiceLines il 
-ON i.InvoiceID=il.InvoiceID
+JOIN Sales.OrderLines ol 
+ON i.OrderID=ol.OrderID
 WHERE i.InvoiceDate >= '2015-01-01'
-ORDER BY i.InvoiceDate
+ORDER BY YEAR(i.InvoiceDate), MONTH(i.InvoiceDate), i.InvoiceDate, c.CustomerName
 
 /*
 3. Вывести список 2х самых популярных продуктов (по количеству проданных) 
@@ -198,32 +198,25 @@ c.CustomerID AS CustomerId,
 c.CustomerName AS CustomerName,
 si.StockItemID AS ItemId,
 si.StockItemName AS ProductName,
-il.UnitPrice AS Price,
-MAX(il.Quantity * il.UnitPrice) AS Cost,
-MAX(i.InvoiceDate) AS DateSale,
+il.Quantity * il.UnitPrice AS Cost,
+i.InvoiceDate AS DateSale,
 ROW_NUMBER() OVER (
 PARTITION BY c.CustomerID
 ORDER BY il.UnitPrice DESC) AS Rank
 FROM Sales.Invoices i
-LEFT JOIN Sales.InvoiceLines il 
+JOIN Sales.InvoiceLines il 
 ON i.InvoiceID = il.InvoiceID
-LEFT JOIN Sales.Customers c 
+JOIN Sales.Customers c 
 ON i.CustomerID = c.CustomerID
-LEFT JOIN Warehouse.StockItems si 
-ON il.StockItemID = si.StockItemID
-GROUP BY c.CustomerID,
-c.CustomerName,
-si.StockItemID,
-si.StockItemName,
-il.UnitPrice)
+JOIN Warehouse.StockItems si 
+ON il.StockItemID = si.StockItemID)
 SELECT 
 CustomerId AS 'Код клиента',
 CustomerName AS 'Имя клиента',
 ItemId AS 'Код продукта',
 ProductName AS 'Название продукта',
-Price AS 'Цена',
 Cost AS 'Стоимость',
 DateSale AS 'Дата покупки'
 FROM ExpensiveProducts
 WHERE Rank <= 2
-ORDER BY CustomerId, Cost DESC, DateSale DESC
+ORDER BY CustomerId, Cost DESC, DateSale DESC;
