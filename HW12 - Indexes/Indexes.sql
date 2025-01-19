@@ -1,3 +1,6 @@
+SET ANSI_NULLS ON
+GO
+
 -- Создание полнотекстового индекса по BookName таблицы Books для поиска книг на сайте
 CREATE FULLTEXT INDEX ON Books (BookName LANGUAGE 1033)
 KEY INDEX PK_Books;
