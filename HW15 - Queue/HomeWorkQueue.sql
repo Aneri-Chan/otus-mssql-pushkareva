@@ -1,7 +1,7 @@
 USE WideWorldImporters;
 GO
 
--- Создаем таблицу для хранения отчетов по заказам клиентов
+-- РЎРѕР·РґР°РµРј С‚Р°Р±Р»РёС†Сѓ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РѕС‚С‡РµС‚РѕРІ РїРѕ Р·Р°РєР°Р·Р°Рј РєР»РёРµРЅС‚РѕРІ
 CREATE TABLE Sales.CustomerOrderReports (
     ReportID INT IDENTITY(1,1) PRIMARY KEY,
     CustomerID INT NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE Sales.CustomerOrderReports (
     ReportGeneratedAt DATETIME DEFAULT GETDATE()
 );
 
--- Включаем Service Broker, если не включен
+-- Р’РєР»СЋС‡Р°РµРј Service Broker, РµСЃР»Рё РЅРµ РІРєР»СЋС‡РµРЅ
 --USE master;
 --GO
 --ALTER DATABASE WideWorldImporters SET ENABLE_BROKER WITH ROLLBACK IMMEDIATE;
@@ -20,38 +20,38 @@ CREATE TABLE Sales.CustomerOrderReports (
 --USE WideWorldImporters;
 --GO
 
---Авторизуемся под учётной записью, созданной специально под обработку очередей
+--РђРІС‚РѕСЂРёР·СѓРµРјСЃСЏ РїРѕРґ СѓС‡С‘С‚РЅРѕР№ Р·Р°РїРёСЃСЊСЋ, СЃРѕР·РґР°РЅРЅРѕР№ СЃРїРµС†РёР°Р»СЊРЅРѕ РїРѕРґ РѕР±СЂР°Р±РѕС‚РєСѓ РѕС‡РµСЂРµРґРµР№
 ALTER AUTHORIZATION    
    ON DATABASE::WideWorldImporters TO QueueUser;
 
--- Создаем тип сообщений для запроса отчета
+-- РЎРѕР·РґР°РµРј С‚РёРї СЃРѕРѕР±С‰РµРЅРёР№ РґР»СЏ Р·Р°РїСЂРѕСЃР° РѕС‚С‡РµС‚Р°
 CREATE MESSAGE TYPE [//WWI/SB/RequestMessage]
 VALIDATION = WELL_FORMED_XML;
 
--- Создаем тип сообщений для ответа
+-- РЎРѕР·РґР°РµРј С‚РёРї СЃРѕРѕР±С‰РµРЅРёР№ РґР»СЏ РѕС‚РІРµС‚Р°
 CREATE MESSAGE TYPE [//WWI/SB/ReplyMessage]
 VALIDATION = WELL_FORMED_XML;
 
--- Создаем контракт для взаимодействия между сервисами
+-- РЎРѕР·РґР°РµРј РєРѕРЅС‚СЂР°РєС‚ РґР»СЏ РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёСЏ РјРµР¶РґСѓ СЃРµСЂРІРёСЃР°РјРё
 CREATE CONTRACT [//WWI/SB/Contract]
 (
     [//WWI/SB/RequestMessage] SENT BY INITIATOR,
     [//WWI/SB/ReplyMessage] SENT BY TARGET
 );
 
--- Создаем очередь и сервис для получателя (Target)
+-- РЎРѕР·РґР°РµРј РѕС‡РµСЂРµРґСЊ Рё СЃРµСЂРІРёСЃ РґР»СЏ РїРѕР»СѓС‡Р°С‚РµР»СЏ (Target)
 CREATE QUEUE TargetQueueWWI;
 CREATE SERVICE [//WWI/SB/TargetService]
        ON QUEUE TargetQueueWWI
        ([//WWI/SB/Contract]);
 
--- Создаем очередь и сервис для инициатора (Initiator)
+-- РЎРѕР·РґР°РµРј РѕС‡РµСЂРµРґСЊ Рё СЃРµСЂРІРёСЃ РґР»СЏ РёРЅРёС†РёР°С‚РѕСЂР° (Initiator)
 CREATE QUEUE InitiatorQueueWWI;
 CREATE SERVICE [//WWI/SB/InitiatorService]
        ON QUEUE InitiatorQueueWWI
        ([//WWI/SB/Contract]);
 
--- Создаем процедуру для отправки заявки на отчет
+-- РЎРѕР·РґР°РµРј РїСЂРѕС†РµРґСѓСЂСѓ РґР»СЏ РѕС‚РїСЂР°РІРєРё Р·Р°СЏРІРєРё РЅР° РѕС‚С‡РµС‚
 
 CREATE PROCEDURE Sales.SendReportRequest
     @CustomerID INT,
@@ -62,14 +62,14 @@ BEGIN
     DECLARE @DialogHandle UNIQUEIDENTIFIER;
     BEGIN TRANSACTION;
 
-    -- Открываем диалог между инициатором и получателем
+    -- РћС‚РєСЂС‹РІР°РµРј РґРёР°Р»РѕРі РјРµР¶РґСѓ РёРЅРёС†РёР°С‚РѕСЂРѕРј Рё РїРѕР»СѓС‡Р°С‚РµР»РµРј
     BEGIN DIALOG @DialogHandle
     FROM SERVICE [//WWI/SB/InitiatorService]
     TO SERVICE '//WWI/SB/TargetService'
     ON CONTRACT [//WWI/SB/Contract]
     WITH ENCRYPTION = OFF;
 
-    -- Создаем XML-запрос
+    -- РЎРѕР·РґР°РµРј XML-Р·Р°РїСЂРѕСЃ
     DECLARE @Message XML;
     SET @Message = 
     '<ReportRequest>
@@ -78,7 +78,7 @@ BEGIN
         <EndDate>' + CAST(@EndDate AS NVARCHAR) + '</EndDate>
     </ReportRequest>';
 
-    -- Отправляем сообщение
+    -- РћС‚РїСЂР°РІР»СЏРµРј СЃРѕРѕР±С‰РµРЅРёРµ
     SEND ON CONVERSATION @DialogHandle
     MESSAGE TYPE [//WWI/SB/RequestMessage]
     (@Message);
@@ -86,7 +86,7 @@ BEGIN
     COMMIT TRANSACTION;
 END;
 
--- Создаем процедуру для обработки сообщений из очереди
+-- РЎРѕР·РґР°РµРј РїСЂРѕС†РµРґСѓСЂСѓ РґР»СЏ РѕР±СЂР°Р±РѕС‚РєРё СЃРѕРѕР±С‰РµРЅРёР№ РёР· РѕС‡РµСЂРµРґРё
 CREATE PROCEDURE Sales.ProcessReportQueue
 AS
 BEGIN
@@ -94,7 +94,7 @@ BEGIN
     DECLARE @MessageBody XML;
     DECLARE @CustomerID INT, @StartDate DATE, @EndDate DATE;
 
-    -- Получаем сообщение из очереди
+    -- РџРѕР»СѓС‡Р°РµРј СЃРѕРѕР±С‰РµРЅРёРµ РёР· РѕС‡РµСЂРµРґРё
     RECEIVE TOP (1) 
         @DialogHandle = conversation_handle,
         @MessageBody = CAST(message_body AS XML)
@@ -102,19 +102,19 @@ BEGIN
 
     IF @MessageBody IS NOT NULL
     BEGIN
-        -- Извлекаем данные из XML
+        -- РР·РІР»РµРєР°РµРј РґР°РЅРЅС‹Рµ РёР· XML
         SET @CustomerID = @MessageBody.value('(/ReportRequest/CustomerID)[1]', 'INT');
         SET @StartDate = @MessageBody.value('(/ReportRequest/StartDate)[1]', 'DATE');
         SET @EndDate = @MessageBody.value('(/ReportRequest/EndDate)[1]', 'DATE');
 
-        -- Записываем отчет в таблицу
+        -- Р—Р°РїРёСЃС‹РІР°РµРј РѕС‚С‡РµС‚ РІ С‚Р°Р±Р»РёС†Сѓ
         INSERT INTO Sales.CustomerOrderReports (CustomerID, StartDate, EndDate, OrderCount)
         SELECT 
             @CustomerID, @StartDate, @EndDate, COUNT(*)
         FROM Sales.Orders
         WHERE CustomerID = @CustomerID AND OrderDate BETWEEN @StartDate AND @EndDate;
 
-        -- Отправляем подтверждение
+        -- РћС‚РїСЂР°РІР»СЏРµРј РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ
         SEND ON CONVERSATION @DialogHandle
         MESSAGE TYPE [//WWI/SB/ReplyMessage] (N'<Success/>');
 
@@ -122,7 +122,7 @@ BEGIN
     END;
 END;
 
--- Активируем очередь для автоматической обработки
+-- РђРєС‚РёРІРёСЂСѓРµРј РѕС‡РµСЂРµРґСЊ РґР»СЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕР№ РѕР±СЂР°Р±РѕС‚РєРё
 ALTER QUEUE dbo.TargetQueueWWI 
 WITH ACTIVATION (
     STATUS = ON, 
@@ -131,19 +131,19 @@ WITH ACTIVATION (
     EXECUTE AS OWNER
 );
 
--- Отправляем заявки на отчеты за разные периоды
+-- РћС‚РїСЂР°РІР»СЏРµРј Р·Р°СЏРІРєРё РЅР° РѕС‚С‡РµС‚С‹ Р·Р° СЂР°Р·РЅС‹Рµ РїРµСЂРёРѕРґС‹
 EXEC Sales.SendReportRequest @CustomerID = 85, @StartDate = '2013-01-01', @EndDate = '2013-12-31';
 EXEC Sales.SendReportRequest @CustomerID = 85, @StartDate = '2014-01-01', @EndDate = '2014-12-31';
 EXEC Sales.SendReportRequest @CustomerID = 85, @StartDate = '2015-01-01', @EndDate = '2015-12-31';
 EXEC Sales.SendReportRequest @CustomerID = 85, @StartDate = '2016-01-01', @EndDate = '2016-12-31';
 
--- Даем системе время на обработку, затем проверяем созданные отчеты
+-- Р”Р°РµРј СЃРёСЃС‚РµРјРµ РІСЂРµРјСЏ РЅР° РѕР±СЂР°Р±РѕС‚РєСѓ, Р·Р°С‚РµРј РїСЂРѕРІРµСЂСЏРµРј СЃРѕР·РґР°РЅРЅС‹Рµ РѕС‚С‡РµС‚С‹
 SELECT * FROM Sales.CustomerOrderReports WHERE CustomerID = 85;
 
--- Проверяем, есть ли необработанные сообщения в очереди
+-- РџСЂРѕРІРµСЂСЏРµРј, РµСЃС‚СЊ Р»Рё РЅРµРѕР±СЂР°Р±РѕС‚Р°РЅРЅС‹Рµ СЃРѕРѕР±С‰РµРЅРёСЏ РІ РѕС‡РµСЂРµРґРё
 SELECT * FROM dbo.TargetQueueWWI;
 SELECT * FROM dbo.InitiatorQueueWWI;
 
--- Проверяем активные диалоги
+-- РџСЂРѕРІРµСЂСЏРµРј Р°РєС‚РёРІРЅС‹Рµ РґРёР°Р»РѕРіРё
 SELECT conversation_handle, is_initiator, state_desc
 FROM sys.conversation_endpoints;
