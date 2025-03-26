@@ -1,14 +1,14 @@
--- Выбрала таблицу [Warehouse].[StockItemTransactions]
+п»ї-- Р’С‹Р±СЂР°Р»Р° С‚Р°Р±Р»РёС†Сѓ [Warehouse].[StockItemTransactions]
 
 USE WideWorldImporters;
 
--- 1. Создадим файловые группы
+-- 1. РЎРѕР·РґР°РґРёРј С„Р°Р№Р»РѕРІС‹Рµ РіСЂСѓРїРїС‹
 
-ALTER DATABASE WideWorldImporters ADD FILEGROUP FG_OtherTypes;  -- Для TransactionTypeID = 1-9
-ALTER DATABASE WideWorldImporters ADD FILEGROUP FG_MainTypes;   -- Для TransactionTypeID = 10, 11, 12
-ALTER DATABASE WideWorldImporters ADD FILEGROUP FG_FutureTypes; -- Для TransactionTypeID = 13+
+ALTER DATABASE WideWorldImporters ADD FILEGROUP FG_OtherTypes;  -- Р”Р»СЏ TransactionTypeID = 1-9
+ALTER DATABASE WideWorldImporters ADD FILEGROUP FG_MainTypes;   -- Р”Р»СЏ TransactionTypeID = 10, 11, 12
+ALTER DATABASE WideWorldImporters ADD FILEGROUP FG_FutureTypes; -- Р”Р»СЏ TransactionTypeID = 13+
 
--- 2. Создадим файлы для групп
+-- 2. РЎРѕР·РґР°РґРёРј С„Р°Р№Р»С‹ РґР»СЏ РіСЂСѓРїРї
 
 ALTER DATABASE WideWorldImporters ADD FILE 
 (
@@ -31,18 +31,18 @@ ALTER DATABASE WideWorldImporters ADD FILE
     SIZE = 50MB, FILEGROWTH = 10MB
 ) TO FILEGROUP FG_FutureTypes;
 
--- 3. Создадим функцию секционирования
+-- 3. РЎРѕР·РґР°РґРёРј С„СѓРЅРєС†РёСЋ СЃРµРєС†РёРѕРЅРёСЂРѕРІР°РЅРёСЏ
 
 CREATE PARTITION FUNCTION pf_TransactionTypeID (int)
 AS RANGE LEFT FOR VALUES (9, 12); 
 
--- 4. Создадим схему секционирования
+-- 4. РЎРѕР·РґР°РґРёРј СЃС…РµРјСѓ СЃРµРєС†РёРѕРЅРёСЂРѕРІР°РЅРёСЏ
 
 CREATE PARTITION SCHEME ps_TransactionTypeID 
 AS PARTITION pf_TransactionTypeID 
 TO (FG_OtherTypes, FG_MainTypes, FG_FutureTypes);
 
--- 5. Создадим саму таблицу секционирования
+-- 5. РЎРѕР·РґР°РґРёРј СЃР°РјСѓ С‚Р°Р±Р»РёС†Сѓ СЃРµРєС†РёРѕРЅРёСЂРѕРІР°РЅРёСЏ
 
 CREATE TABLE [Warehouse].[StockItemTransactions_Partitioned] (
     StockItemTransactionID INT NOT NULL,
@@ -58,10 +58,10 @@ CREATE TABLE [Warehouse].[StockItemTransactions_Partitioned] (
     LastEditedWhen DATETIME NOT NULL,
     CONSTRAINT PK_StockItemTransactions_Partitioned 
         PRIMARY KEY CLUSTERED (TransactionTypeID, StockItemTransactionID) 
-        ON ps_TransactionTypeID (TransactionTypeID) -- секционирование по TransactionTypeID
+        ON ps_TransactionTypeID (TransactionTypeID) -- СЃРµРєС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ РїРѕ TransactionTypeID
 );
 
--- 6. Перенесем данные в секционированную таблицу
+-- 6. РџРµСЂРµРЅРµСЃРµРј РґР°РЅРЅС‹Рµ РІ СЃРµРєС†РёРѕРЅРёСЂРѕРІР°РЅРЅСѓСЋ С‚Р°Р±Р»РёС†Сѓ
 
 INSERT INTO [Warehouse].[StockItemTransactions_Partitioned] (
     StockItemTransactionID, StockItemID, TransactionTypeID, CustomerID, InvoiceID, 
@@ -71,7 +71,7 @@ SELECT StockItemTransactionID, StockItemID, TransactionTypeID, CustomerID, Invoi
        SupplierID, PurchaseOrderID, TransactionOccurredWhen, Quantity, LastEditedBy, LastEditedWhen
 FROM [Warehouse].[StockItemTransactions];
 
--- 7. Проверим, как у нас распределились данные при помощи запроса, показывающего количество строк в каждой секции
+-- 7. РџСЂРѕРІРµСЂРёРј, РєР°Рє Сѓ РЅР°СЃ СЂР°СЃРїСЂРµРґРµР»РёР»РёСЃСЊ РґР°РЅРЅС‹Рµ РїСЂРё РїРѕРјРѕС‰Рё Р·Р°РїСЂРѕСЃР°, РїРѕРєР°Р·С‹РІР°СЋС‰РµРіРѕ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє РІ РєР°Р¶РґРѕР№ СЃРµРєС†РёРё
 
 SELECT p.partition_number, 
        fg.name AS Filegroup, 
@@ -83,7 +83,7 @@ JOIN sys.filegroups fg ON dds.data_space_id = fg.data_space_id
 WHERE i.object_id = OBJECT_ID('[Warehouse].[StockItemTransactions_Partitioned]')
 ORDER BY p.partition_number;
 
--- 8. Обновим данные в оригинальной таблице
+-- 8. РћР±РЅРѕРІРёРј РґР°РЅРЅС‹Рµ РІ РѕСЂРёРіРёРЅР°Р»СЊРЅРѕР№ С‚Р°Р±Р»РёС†Рµ
 
   update [Warehouse].[StockItemTransactions]
   set [TransactionTypeID] = 8
@@ -93,7 +93,7 @@ ORDER BY p.partition_number;
   --set [TransactionTypeID] = 11
   --where [TransactionTypeID] = 8
 
--- 9. Добавим обновленные данные в секционированную таблицу, чтобы проверить, как теперь отработает
+-- 9. Р”РѕР±Р°РІРёРј РѕР±РЅРѕРІР»РµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ РІ СЃРµРєС†РёРѕРЅРёСЂРѕРІР°РЅРЅСѓСЋ С‚Р°Р±Р»РёС†Сѓ, С‡С‚РѕР±С‹ РїСЂРѕРІРµСЂРёС‚СЊ, РєР°Рє С‚РµРїРµСЂСЊ РѕС‚СЂР°Р±РѕС‚Р°РµС‚
 
 INSERT INTO [Warehouse].[StockItemTransactions_Partitioned] (
     StockItemTransactionID, StockItemID, TransactionTypeID, CustomerID, InvoiceID, 
@@ -104,7 +104,7 @@ SELECT StockItemTransactionID, StockItemID, TransactionTypeID, CustomerID, Invoi
 FROM [Warehouse].[StockItemTransactions]
 where [TransactionTypeID] = 8;
 
--- 10. На этот раз проверим через группировку строк по секциям
+-- 10. РќР° СЌС‚РѕС‚ СЂР°Р· РїСЂРѕРІРµСЂРёРј С‡РµСЂРµР· РіСЂСѓРїРїРёСЂРѕРІРєСѓ СЃС‚СЂРѕРє РїРѕ СЃРµРєС†РёСЏРј
 
 SELECT 
     TransactionTypeID, 
@@ -114,6 +114,6 @@ FROM [Warehouse].[StockItemTransactions_Partitioned]
 GROUP BY TransactionTypeID, $PARTITION.pf_TransactionTypeID(TransactionTypeID)
 ORDER BY PartitionNumber;
 
--- Из запроса видим, что с TransactionTypeID = 8 данные попали в 1 секцию,
--- остальные типы транзакций распределились во вторую секцию
+-- РР· Р·Р°РїСЂРѕСЃР° РІРёРґРёРј, С‡С‚Рѕ СЃ TransactionTypeID = 8 РґР°РЅРЅС‹Рµ РїРѕРїР°Р»Рё РІ 1 СЃРµРєС†РёСЋ,
+-- РѕСЃС‚Р°Р»СЊРЅС‹Рµ С‚РёРїС‹ С‚СЂР°РЅР·Р°РєС†РёР№ СЂР°СЃРїСЂРµРґРµР»РёР»РёСЃСЊ РІРѕ РІС‚РѕСЂСѓСЋ СЃРµРєС†РёСЋ
 
