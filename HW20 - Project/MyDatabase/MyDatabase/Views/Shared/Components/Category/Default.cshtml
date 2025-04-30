@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MyDatabase.Models.Category>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Категории отсутствуют.</p>
+}
+else
+{
+
+        @foreach (var category in Model)
+        {
+            <li class="menu-item">
+                <a href="/Category/Index?categoryId=@category.CategoryID" class="link">@category.CategoryName</a>
+            </li>
+        }
+  
+}

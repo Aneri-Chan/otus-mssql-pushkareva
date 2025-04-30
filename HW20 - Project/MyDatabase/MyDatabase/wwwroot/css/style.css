@@ -1,0 +1,203 @@
+/* Начало общих стилей */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+    font-family: 'Ubuntu';
+}
+
+/* Стили шрифтов (основной текст) */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../fonts/ubuntu/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'UbuntuReg';
+    src: url(../fonts/ubuntu/Ubuntu-Regular.ttf);
+}
+
+/* Фон страниц сайта */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Добавим это, чтобы скрыть горизонтальную прокрутку */
+}
+
+.color{
+    color: #3F5150;
+}
+
+/* Конец общих стилей */
+
+/* Начало стилей шапки */
+
+.navcatalog{
+    color: white !important;
+    margin: 0;
+    padding: 0;
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.call-text{
+    margin-left: 3.5rem !important;
+
+}
+
+.call{
+    font-family: 'UbuntuReg';
+    color: #435763 !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+
+}
+
+.call:hover{
+    color: #1e282e !important;
+}
+
+.search-book{
+    font-size: 14px !important;
+    background-color: #dbdada;
+    color: #969696 !important;
+    padding: 8px 45px 9px 15px !important;
+    border-radius: 4px !important;
+    width: 30rem;
+}
+
+.search-book input:focus{
+    background-color: #dbdada;
+    color: #969696 !important;
+    border-color:#31434e !important;
+
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-container input {
+    padding-right: 40px; /* Space for the icon */
+}
+
+.cont-cat-hov{
+    padding: 0 !important;
+}
+
+.cat-hov{
+    background-color: #4D6160;
+    padding: 0.3rem;
+}
+
+.nav-hov{
+    background-color: #31434e;
+    padding-top: 0.1rem;
+}
+      
+.nav-hov:hover{
+    background-color: #4e626e;
+}
+
+/* Конец стилей шапки */
+
+/* Начало стилей левого списка */
+
+.menu{
+    padding-left: 0 !important;
+}
+
+.menu-item{
+    background: #f9f9f9;
+    border: 1px solid #eaebec;
+    padding: 0.5rem !important;
+}
+
+.link{
+    color: #555;
+  
+}
+
+.left-block{
+    width: 16rem !important;
+}
+
+/* Конец стилей левого списка */
+
+/*стили книг*/
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+    .book-item img {
+        max-width: 100%;
+    }
+
+.book-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.book-table {
+    margin-top: 20px;
+}
+
+.card {
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.view-toggle {
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    display: flex !important;
+}
+
+#cart-panel {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #004d40;
+    padding: 10px 5px;
+    border-radius: 10px 0 0 10px;
+    z-index: 1000;
+    min-width: 50px;
+}
+
+    #cart-panel a {
+        color: white;
+        text-decoration: none;
+    }
+
+#cart-count {
+    font-size: 0.7rem;
+    padding: 4px 6px;
+}
+
+

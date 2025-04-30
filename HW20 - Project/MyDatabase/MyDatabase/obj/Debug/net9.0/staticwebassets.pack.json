@@ -1,0 +1,697 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MyDatabase.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MyDatabase.0u03zig6td.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\COPYRIGHT.txt",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\COPYRIGHT.txt"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\Ubuntu-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\Ubuntu-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\Ubuntu-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\Ubuntu-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\Ubuntu-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\Ubuntu-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\Ubuntu-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\fonts\\ubuntu\\Ubuntu-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ubuntu\\Ubuntu-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\UploadImages\\book_97\\1eed18de-e61a-47c0-96ac-09bb7ec55246.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\UploadImages\\book_97\\1eed18de-e61a-47c0-96ac-09bb7ec55246.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\UploadImages\\book_97\\9c30de03-7717-47b6-bf7e-d4bced8c337f.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\UploadImages\\book_97\\9c30de03-7717-47b6-bf7e-d4bced8c337f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\UploadImages\\book_97\\f3bb4c00-b515-48cf-ac76-6c76f33fcdd1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\UploadImages\\book_97\\f3bb4c00-b515-48cf-ac76-6c76f33fcdd1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\UploadImages\\book_97\\fe21bd62-c55a-4b8b-b80d-bf5d6d4a943b.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\UploadImages\\book_97\\fe21bd62-c55a-4b8b-b80d-bf5d6d4a943b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_meditation\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_meditation\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_meditation\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_meditation\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_meditation\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_meditation\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_meditation\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_meditation\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_meditation\\5.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_meditation\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_meditation\\6.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_meditation\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_meditation\\7.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_meditation\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_meditation\\8.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_meditation\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\10.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\11.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\12.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\12chains\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\12chains\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\12chains\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\12chains\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\12chains\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\12chains\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\12chains\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\12chains\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\13.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\14.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\15.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\5.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\6.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\7.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\8.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\buddhist_philosophy\\9.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\buddhist_philosophy\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\default\\no-image.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\default\\no-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\10.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\11.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\12.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\13.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\14.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\15.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\16.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\17.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\18.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\5.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\6.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\7.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\8.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\enlightenment_n_comments\\9.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\enlightenment_n_comments\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\10.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\5.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\6.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\7.jpeg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\7.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\8.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_beginners\\9.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_beginners\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_children\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_children\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_children\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_children\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\for_children\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\for_children\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\10.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\5.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\6.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\7.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\8.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\mind_training\\9.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\mind_training\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\other\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\other\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\other\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\other\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\other\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\other\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\other\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\other\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\other\\5.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\other\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\other\\6.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\other\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\periodicals_and_calendars\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\periodicals_and_calendars\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\periodicals_and_calendars\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\periodicals_and_calendars\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\periodicals_and_calendars\\3.png",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\periodicals_and_calendars\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\periodicals_and_calendars\\calendar\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\periodicals_and_calendars\\calendar\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\periodicals_and_calendars\\calendar\\2.png",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\periodicals_and_calendars\\calendar\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\practice_texts\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\practice_texts\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\practice_texts\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\practice_texts\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\tantra\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\tantra\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\tantra\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\tantra\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\tantra\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\tantra\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\tantra\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\tantra\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\tantra\\5.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\tantra\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\ContentPhoto\\tantra\\6.jpg",
+      "PackagePath": "staticwebassets\\media\\ContentPhoto\\tantra\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\icons\\icon.png",
+      "PackagePath": "staticwebassets\\media\\icons\\icon.png"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\icons\\phone-call.png",
+      "PackagePath": "staticwebassets\\media\\icons\\phone-call.png"
+    },
+    {
+      "Id": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\wwwroot\\media\\logo.png",
+      "PackagePath": "staticwebassets\\media\\logo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MyDatabase.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MyDatabase.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.MyDatabase.props",
+      "PackagePath": "build\\MyDatabase.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.MyDatabase.props",
+      "PackagePath": "buildMultiTargeting\\MyDatabase.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.MyDatabase.props",
+      "PackagePath": "buildTransitive\\MyDatabase.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Панель администратора";
+}
+
+<h2 style="text-align: center; color: #333; margin-bottom: 20px;">Панель администратора</h2>
+
+<!-- Сообщения -->
+<div id="alertBox" style="text-align:center; margin-bottom: 15px;"></div>
+
+<!-- Карточки опций -->
+<div class="admin-buttons">
+
+    <a href="@Url.Action("Index", "Books", new { area = "Admin" })" class="admin-link">
+        📚 Управление книгами
+    </a>
+
+    <a href="@Url.Action("Index", "Categories", new { area = "Admin" })" class="admin-link">
+        📂 Категории
+    </a>
+
+
+    <a href="@Url.Action("Users", "Admin")" class="admin-link">
+        👥 Управление пользователями
+    </a>
+
+    <a href="@Url.Action("Orders", "Admin")" class="admin-link">
+        📦 Заказы
+    </a>
+
+    <a href="@Url.Action("Reviews", "Admin")" class="admin-link">
+        📝 Отзывы
+    </a>
+
+</div>
+
+<style>
+    .admin-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .admin-link {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #4D6160;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.2s ease;
+        white-space: nowrap;
+    }
+
+    .admin-link:hover {
+        background-color: #31434e;
+    }
+
+    .admin-link.exit {
+        background-color: #c0392b;
+    }
+
+    .admin-link.exit:hover {
+        background-color: #992d22;
+    }
+</style>

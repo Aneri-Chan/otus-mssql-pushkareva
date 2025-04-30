@@ -1,0 +1,89 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<h2 style="text-align: center; color: #333;">Регистрация</h2>
+
+<form asp-action="Register" method="post"
+      style="display: flex; flex-direction: column; max-width: 320px; margin: auto; padding: 20px;">
+
+    <input asp-for="CustomerName" placeholder="ФИО" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 0;">
+    <span asp-validation-for="CustomerName" style="color: red;"></span>
+
+    <input asp-for="Email" placeholder="Email" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 0;">
+    <span asp-validation-for="Email" style="color: red;"></span>
+    <span id="EmailError" style="color: red; display: none;"></span>
+
+    <input asp-for="PhoneNumber" placeholder="Телефон" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 0;">
+    <span asp-validation-for="PhoneNumber" style="color: red;"></span>
+    <span id="PhoneError" style="color: red; display: none;"></span>
+
+    <input asp-for="Password" placeholder="Пароль" type="password" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 0;">
+    <span asp-validation-for="Password" style="color: red;"></span>
+
+    <input asp-for="ConfirmPassword" placeholder="Подтвердите пароль" type="password" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 0;">
+    <span asp-validation-for="ConfirmPassword" style="color: red;"></span>
+
+    <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 15px;">
+        <input asp-for="CaptchaConfirmed" type="checkbox" required> Я не робот
+    </label>
+    <span asp-validation-for="CaptchaConfirmed" style="color: red;"></span>
+
+    <button class="btn-reg" type="submit"
+            style="background-color: #4D6160; color: white; padding: 12px; border: none; cursor: pointer; font-size: 16px; transition: 0.3s;">
+        Зарегистрироваться
+    </button>
+
+    <p style="text-align: center; margin-top: 15px;">
+        <a href="/Account/Login" style="text-decoration: none; color: #4D6160;">Уже есть аккаунт? Войти</a>
+    </p>
+</form>
+
+    <style>
+        .btn-reg:hover{
+        background-color: #31434e !important;
+    }
+    </style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#Email").on("change", function () {
+            var email = $(this).val();
+            $.ajax({
+                url: "/Account/CheckEmail",
+                type: "POST",
+                data: { email: email },
+                success: function (response) {
+                    if (!response.success) {
+                        $("#EmailError").text(response.message).show();
+                    } else {
+                        $("#EmailError").hide();
+                    }
+                }
+            });
+        });
+
+        $("#PhoneNumber").on("change", function () {
+            var phone = $(this).val();
+            $.ajax({
+                url: "/Account/CheckPhone",
+                type: "POST",
+                data: { phoneNumber: phone },
+                success: function (response) {
+                    if (!response.success) {
+                        $("#PhoneError").text(response.message).show();
+                    } else {
+                        $("#PhoneError").hide();
+                    }
+                }
+            });
+        });
+    });
+</script>

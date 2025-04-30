@@ -1,0 +1,10 @@
+﻿@model List<MyDatabase.Models.Category>
+
+@foreach (var category in Model)
+{
+    <li class="menu-item">
+        <a href="/Category/BooksByCategory?categoryId=@category.CategoryID" class="link">
+            @category.CategoryName
+        </a>
+    </li>
+}
