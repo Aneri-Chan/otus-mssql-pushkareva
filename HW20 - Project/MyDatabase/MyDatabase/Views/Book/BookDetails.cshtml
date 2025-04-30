@@ -1,0 +1,35 @@
+﻿@model MyDatabase.Models.BookViewModel
+
+<h2>@Model.BookName</h2>
+
+<div class="book-detail">
+    <img src="~/media/@Model.PhotoLink" class="book-detail-image" />
+    <div class="book-info">
+        <p><strong>Цена:</strong> @Model.Price руб.</p>
+        <button class="cart-btn">Добавить в корзину</button>
+    </div>
+</div>
+
+<style>
+    .book-detail {
+        display: flex;
+        gap: 20px;
+    }
+
+    .book-detail-image {
+        width: 200px;
+        height: auto;
+    }
+
+    .cart-btn {
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+        .cart-btn:hover {
+            background: #0056b3;
+        }
+</style>

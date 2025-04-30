@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - BuddhaBook</title>
+
+    <!-- Иконка сайта -->
+    <link rel="shortcut icon" sizes="32x32" href="~/media/icons/icon.png" type="image/png">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-body-tertiary">
+
+    <!-- Шапка -->
+    <header class="container bg-white">
+        <nav class="container navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand m-3" href="/">
+                    <img class="img-fluid" src="~/media/logo.png" alt="BuddhaBook">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <form class="d-flex search-container" role="search" method="get" action="/Book/Search">
+                        <input class="form-control me-3 search-book" type="search" name="query"
+                               placeholder="Поиск книг по названию или автору" aria-label="Search">
+                        <button type="submit" class="btn btn-primary">🔍 Искать</button>
+                    </form>
+
+                    <div class="phone color m-2">
+                        <img class="img-fluid phone" src="~/media/icons/phone-call.png" alt="Phone" width="40" height="40">
+                        <span>8 (925) 825-99-59</span>
+                        <div class="call-text" style="margin-top: -10px;">
+                            <a class="call" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Навигация -->
+        <div class="navbar navbar-expand-lg navcatalog">
+            <div class="container-fluid cont-cat-hov">
+                <div class="navbar-nav cat-hov ps-5 pe-5">
+                    <a class="navbar-brand text-white ps-1 pe-5" href="#">КАТАЛОГ</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <div class="nav-hov col-6 col-md-3 text-center">
+                            <a class="nav-link text-white ms-1 me-1 mb-1 mt-1" href="#">АВТОРЫ</a>
+                        </div>
+                        <div class="nav-hov col-6 col-md-4 text-center">
+                            <a class="nav-link text-white mb-1 mt-1" href="#">О МАГАЗИНЕ</a>
+                        </div>
+                        <div class="nav-hov col-6 col-md-5 text-center">
+                            <a class="nav-link text-white ms-1 me-1 mb-1 mt-1" href="#">ОПЛАТА И ДОСТАВКА</a>
+                        </div>
+                        <div class="nav-hov col-6 col-md-4 text-center">
+                            <a class="nav-link text-white ms-1 me-1 mb-1 mt-1" href="#">ПОМОЩЬ</a>
+                        </div>
+                        <div class="nav-hov col-6 col-md-4 text-center">
+                            <a class="nav-link text-white mb-1 mt-1" href="#">КОНТАКТЫ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Контент страницы -->
+    <div class="container bg-white mt-3">
+        <div class="row">
+            <!-- Левая колонка (Категории) -->
+            <div class="col-md-3">
+                <div class="menu-catalog">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="/Book/AllBooks" class="link">Все книги</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="link" href="@Url.Action("NewBooks", "Book")">Новинки</a>
+                        </li>
+                        @await Component.InvokeAsync("CategoryMenu")
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Правая колонка (Книги и динамический контент) -->
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="container bg-white text-center p-3 mt-4">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand m-3" href="/">
+                    <img class="img-fluid" src="~/media/logo.png" alt="BuddhaBook">
+                </a>
+                <div class="phone color m-2">
+                    <img class="img-fluid phone" src="~/media/icons/phone-call.png" alt="Phone" width="40" height="40">
+                    <span>8 (925) 825-99-59</span>
+                    <div class="call-text" style="margin-top: -10px;">
+                        <a class="call" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+                    </div>
+                </div>
+            </div>
+            @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+
+              
+<br />
+
+        <p class="text-muted">&copy; @DateTime.Now.Year - BuddhaBook. Все права защищены.</p>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="~/js/scripts.js"></script>
+    
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    @inject IHttpContextAccessor HttpContextAccessor
+
+    <div id="cart-panel" class="d-flex flex-column align-items-center">
+        @if (HttpContextAccessor.HttpContext?.User?.Identity?.IsAuthenticated == true)
+        {
+            var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
+
+            if (userRole == "Admin")
+            {
+                <a href="/Admin" class="text-white mb-3">
+                    <i class="fas fa-user-shield fa-2x"></i>
+                </a>
+                <a href="@Url.Action("Logout", "Account", new { area = "" })" class="text-white mb-3">
+                    <i class="fas fa-sign-out-alt fa-2x"></i>
+                </a>
+
+            }
+            else
+            {
+                <a href="/Cart" class="text-white mb-3 position-relative">
+                    <i class="fas fa-shopping-cart fa-2x"></i>
+                    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                    </span>
+                </a>
+
+                <a href="/Profile" class="text-white mb-3">
+                    <i class="fas fa-user fa-2x"></i>
+                </a>
+
+                <a href="@Url.Action("Logout", "Account", new { area = "" })" class="text-white mb-3">
+                    <i class="fas fa-sign-out-alt fa-2x"></i>
+                </a>
+
+            }
+        }
+        else
+        {
+            <a href="@Url.Action("Login", "Account")" class="text-white mb-3">
+                <i class="fas fa-sign-in-alt fa-2x"></i>
+            </a>
+        }
+    </div>
+
+</body>
+</html>

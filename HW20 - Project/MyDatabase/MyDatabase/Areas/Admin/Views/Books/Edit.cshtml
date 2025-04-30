@@ -1,0 +1,148 @@
+﻿@model MyDatabase.Models.Book
+@using MyDatabase.Models
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    ViewData["Title"] = "Редактирование книги";
+    Layout = "_Layout";
+}
+
+<h2 class="mt-3">✏️ Редактирование книги</h2>
+
+<div id="bookAlert" class="text-center mb-3"></div>
+
+<form id="bookForm" enctype="multipart/form-data"
+      action="@Url.Action("Edit", "Books", new { area = "Admin" })"
+      method="post"
+      class="p-3 border rounded container mb-5" style="max-width: 600px;">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" name="BookID" value="@Model.BookID" />
+
+    <input name="BookName" value="@Model.BookName" placeholder="Название книги" class="form-control mb-2" required />
+
+    <input name="Author" value="@Model.Author" placeholder="Автор" class="form-control mb-2" required />
+
+    <input name="Price" value="@Model.Price" placeholder="Цена" type="number" step="0.01" class="form-control mb-2" required />
+
+    <input name="Weight" value="@Model.Weight" placeholder="Вес (г)" type="number" class="form-control mb-2" />
+
+    <input name="ISBN" value="@Model.ISBN" placeholder="ISBN" class="form-control mb-2" pattern="[A-Za-z0-9\-]*" />
+
+    <select name="CategoryID" class="form-select mb-2" required>
+        <option disabled value="">-- Выберите категорию --</option>
+        @foreach (var cat in ViewBag.Categories as List<Category>)
+        {
+            <option value="@cat.CategoryID" @(cat.CategoryID == Model.CategoryID ? "selected" : "")>@cat.CategoryName</option>
+        }
+    </select>
+
+    <textarea name="Description" rows="4" placeholder="Описание" class="form-control mb-2" required>@Model.Description</textarea>
+
+    <div class="form-check mb-2">
+        <input type="hidden" name="New" value="false" />
+        <input type="checkbox" name="New" value="true" class="form-check-input" id="newBook" @(Model.New ? "checked" : "") />
+        <label class="form-check-label" for="newBook">Новинка</label>
+    </div>
+
+    <div class="form-check mb-2">
+        <input type="hidden" name="AddCategory" value="false" />
+        <input type="checkbox" name="AddCategory" value="true" class="form-check-input" id="addCategory" @(Model.AddCategory ? "checked" : "") />
+        <label class="form-check-label" for="addCategory">Мы советуем</label>
+    </div>
+
+    <div class="form-check mb-3">
+        <input type="hidden" name="Bestseller" value="false" />
+        <input type="checkbox" name="Bestseller" value="true" class="form-check-input" id="bestseller" @(Model.Bestseller ? "checked" : "") />
+        <label class="form-check-label" for="bestseller">Хит продаж</label>
+    </div>
+
+    <!-- Фото -->
+    <div class="mb-3">
+        <label class="form-label">Загрузить новые изображения:</label>
+        <input type="file" name="Images" multiple accept=".jpg,.jpeg,.png" class="form-control" />
+        <div class="form-text">Можно выбрать несколько изображений (jpg, png). Старые изображения удаляются автоматически.</div>
+    </div>
+
+    <!-- Вывод текущих изображений -->
+    @if (Model.Photos != null && Model.Photos.Any())
+    {
+        <div class="mb-3">
+            <label class="form-label">Текущие изображения:</label>
+            <div class="d-flex flex-wrap gap-2">
+                @foreach (var photo in Model.Photos)
+                {
+                    <div class="position-relative" style="display: inline-block;">
+                        <img src="/media/@photo.PhotoLink" alt="Обложка" style="max-width: 100px; border-radius: 4px;" />
+                        <button type="button" class="btn-close btn-sm position-absolute top-0 end-0 delete-photo-btn"
+                                data-photo-id="@photo.PhotoID"
+                                style="background-color: white; padding: 2px 6px; border-radius: 50%;"></button>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+
+
+    <button type="submit" class="btn btn-success">💾 Сохранить</button>
+    <a href="@Url.Action("Index", "Books", new { area = "Admin" })" class="btn btn-secondary">↩️ Назад</a>
+</form>
+
+<script>
+    document.addEventListener("click", async function (e) {
+        if (e.target.classList.contains("delete-photo-btn")) {
+            const photoId = e.target.dataset.photoId;
+
+            if (confirm("Удалить это изображение?")) {
+                const response = await fetch('@Url.Action("DeletePhoto", "Books", new { area = "Admin" })/' + photoId, {
+                    method: 'POST'
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    e.target.closest('.position-relative').remove();
+                } else {
+                    alert(result.message);
+                }
+            }
+        }
+    });
+           document.getElementById("bookForm").addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const formData = new FormData(form);
+
+        // пересохраняем чекбоксы как true/false
+        form.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            formData.set(checkbox.name, checkbox.checked ? "true" : "false");
+        });
+
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.json();
+
+            const alertDiv = document.getElementById("bookAlert");
+            alertDiv.className = "alert";
+            if (result.success) {
+                alertDiv.classList.add("alert-success");
+                alertDiv.textContent = result.message;
+            } else {
+                alertDiv.classList.add("alert-danger");
+                alertDiv.textContent = result.message || "Ошибка при обновлении книги.";
+            }
+
+        } catch (error) {
+            console.error("Ошибка при отправке формы:", error);
+            const alertDiv = document.getElementById("bookAlert");
+            alertDiv.className = "alert alert-danger";
+            alertDiv.textContent = "Произошла ошибка при отправке формы.";
+        }
+    });
+
+
+</script>

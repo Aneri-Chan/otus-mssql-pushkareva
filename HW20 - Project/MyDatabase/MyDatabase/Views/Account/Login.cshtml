@@ -1,0 +1,68 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Вход в систему";
+}
+
+<h2 style="text-align: center; color: #333;">Вход в систему</h2>
+
+<form id="loginForm"
+      style="display: flex; flex-direction: column; max-width: 320px; margin: auto; padding: 20px;">
+
+    <input asp-for="Email" id="email" name="Email" placeholder="Введите email" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 0;">
+    <span asp-validation-for="Email" style="color: red;"></span>
+
+    <input asp-for="Password" id="password" name="Password" placeholder="Введите пароль" type="password" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 0;">
+    <span asp-validation-for="Password" style="color: red;"></span>
+
+    <button class="btn-login" type="submit"
+            style="background-color: #4D6160; color: white; padding: 12px; border: none; cursor: pointer; font-size: 16px; transition: 0.3s;">
+        Войти
+    </button>
+
+    <p style="text-align: center; margin-top: 15px;">
+        <a href="/Account/Register" style="text-decoration: none; color: #4D6160;">Нет аккаунта? Зарегистрироваться</a>
+    </p>
+</form>
+
+<p id="result" style="text-align: center; color: red;"></p>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+    event.stopImmediatePropagation(); 
+
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+                        fetch("/Account/Login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include", 
+        body: JSON.stringify({ Email: email, Password: password })
+    
+
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("📥 Ответ сервера:", data);
+        if (data.success) {
+           console.log("✅ Успешный вход, редирект на:", data.redirectUrl);
+           window.location.href = data.redirectUrl;
+        } else {
+            document.getElementById("result").innerText = "Ошибка: " + data.message;
+        }
+    })
+    .catch(error => console.error("🚨 Ошибка запроса:", error));
+
+
+    });
+</script>
+
+
+<style>
+    .btn-login:hover {
+        background-color: #31434e !important;
+    }
+</style>

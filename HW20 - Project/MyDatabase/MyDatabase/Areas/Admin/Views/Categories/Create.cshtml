@@ -1,0 +1,86 @@
+﻿@model MyDatabase.Models.Category
+
+@{
+    ViewData["Title"] = "Добавить категорию";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mt-3">Добавить категорию</h2>
+
+<div id="categoryAlert" class="text-center mb-3"></div>
+
+<form id="categoryForm" class="p-3 border rounded" style="max-width: 500px;">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group mb-2">
+        <label for="CategoryName">Название категории</label>
+        <input name="CategoryName" id="CategoryName" class="form-control" required />
+        <span class="text-danger" id="nameError"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">💾 Сохранить</button>
+    <a class="btn btn-secondary" href="javascript:history.back()">↩️ Назад</a>
+</form>
+
+@section Scripts {
+    <script>
+        document.getElementById("categoryForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+            const categoryName = formData.get("CategoryName").trim();
+
+            document.getElementById("nameError").textContent = "";
+            const alertDiv = document.getElementById("categoryAlert");
+            alertDiv.textContent = "";
+            alertDiv.className = "";
+
+            if (categoryName === "") {
+                document.getElementById("nameError").textContent = "Название категории обязательно.";
+                return;
+            }
+
+            // Проверка уникальности
+            const checkResponse = await fetch('@Url.Action("CheckCategoryName", "Categories", new { area = "Admin" })', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "RequestVerificationToken": form.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify({ categoryName: categoryName })
+            });
+
+            const isUnique = await checkResponse.json();
+
+            if (!isUnique) {
+                document.getElementById("nameError").textContent = "Такая категория уже существует.";
+                return;
+            }
+
+            // Отправка формы
+            try {
+                const response = await fetch('@Url.Action("Create", "Categories", new { area = "Admin" })', {
+                    method: "POST",
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                alertDiv.classList.add("alert");
+                if (result.success) {
+                    alertDiv.classList.add("alert-success");
+                    alertDiv.textContent = result.message;
+                    form.reset();
+                } else {
+                    alertDiv.classList.add("alert-danger");
+                    alertDiv.textContent = result.message || "Ошибка при добавлении категории.";
+                }
+            } catch (error) {
+                console.error("Ошибка при отправке формы:", error);
+                alertDiv.className = "alert alert-danger";
+                alertDiv.textContent = "Произошла ошибка при отправке формы.";
+            }
+        });
+    </script>
+}

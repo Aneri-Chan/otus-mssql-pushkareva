@@ -1,0 +1,100 @@
+﻿@using MyDatabase.Models
+@model List<Book>
+
+
+@{
+    ViewData["Title"] = "Управление книгами";
+    Layout = "_Layout";
+}
+
+<h2 class="mt-3">📚 Управление книгами</h2>
+
+<a class="btn btn-success mb-3" href="@Url.Action("Create", "Books", new { area = "Admin" })">
+    ➕ Добавить книгу
+</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Автор</th>
+            <th>Цена</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr id="book-row-@book.BookID">
+                <td>@book.BookName</td>
+                <td>@book.Author</td>
+                <td>@book.Price ₽</td>
+                <td>
+                    <a class="btn btn-sm btn-primary" href="@Url.Action("Edit", "Books", new { area = "Admin", id = book.BookID })">
+                        ✏️ Редактировать
+                    </a>
+                    <form id="deleteForm">
+                        @Html.AntiForgeryToken()
+                    </form>
+
+                    <button type="button" class="btn btn-sm btn-danger" onclick="deleteBook(@book.BookID)">
+                        🗑️ Удалить
+                    </button>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center mt-4">
+
+        <li class="page-item @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+            <a class="page-link" href="@Url.Action("Index", "Books", new { area = "Admin", page = ViewBag.CurrentPage - 1 })">«</a>
+        </li>
+
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", "Books", new { area = "Admin", page = i })">@i</a>
+            </li>
+        }
+
+        <li class="page-item @(ViewBag.CurrentPage == ViewBag.TotalPages ? "disabled" : "")">
+            <a class="page-link" href="@Url.Action("Index", "Books", new { area = "Admin", page = ViewBag.CurrentPage + 1 })">»</a>
+        </li>
+
+    </ul>
+</nav>
+
+
+@section Scripts {
+    <script>
+                function deleteBook(bookId) {
+            if (confirm("Вы уверены, что хотите удалить эту книгу?")) {
+                var token = $('#deleteForm input[name="__RequestVerificationToken"]').val();
+
+                $.ajax({
+                    url: '@Url.Action("Delete", "Books", new { area = "Admin" })',
+                    type: 'POST',
+                    data: {
+                        __RequestVerificationToken: token, // 👈 передаем токен
+                        id: bookId
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            $('#book-row-' + bookId).remove();
+                        } else {
+                            alert("Ошибка при удалении книги.");
+                        }
+                    },
+                    error: function () {
+                        alert("Произошла ошибка. Попробуйте позже.");
+                    }
+                });
+            }
+        }
+
+    </script>
+}

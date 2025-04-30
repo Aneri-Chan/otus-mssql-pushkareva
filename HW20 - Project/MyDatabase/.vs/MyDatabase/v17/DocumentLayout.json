@@ -1,0 +1,899 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\Migrations\\20250330143404_InitialIdentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\book\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\book\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\book\\allbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\book\\allbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\book\\service\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\book\\service\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\book\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\book\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\book\\allbooks.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\book\\allbooks.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\shared\\booksbycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\shared\\booksbycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\photobook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\photobook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\profile\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\profile\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\viewcomponents\\categoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\viewcomponents\\categoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\viewcomponents\\categoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\viewcomponents\\categoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\book\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\book\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\views\\book\\searchbooksbyauthor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\views\\book\\searchbooksbyauthor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|c:\\sql2022\\otus-mssql-pushkareva\\hw20 - project\\mydatabase\\mydatabase\\mydatabase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{25B27A09-BA10-4FA3-AABE-FD6305F0BF58}|MyDatabase\\MyDatabase.csproj|solutionrelative:mydatabase\\mydatabase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\appsettings.json",
+              "RelativeDocumentMoniker": "MyDatabase\\appsettings.json",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\appsettings.json",
+              "RelativeToolTip": "MyDatabase\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-30T05:58:19.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\Service\\OrderService.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Book\\Service\\OrderService.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\Service\\OrderService.cs",
+              "RelativeToolTip": "MyDatabase\\Views\\Book\\Service\\OrderService.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T18:36:24.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "MyDatabase\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAIwMsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T19:23:58.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAHsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T16:38:49.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AllBooks.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\AllBooks.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Book\\AllBooks.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\AllBooks.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Book\\AllBooks.cshtml",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAUwBIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T18:08:39.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:04:23.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "scripts.js",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\wwwroot\\js\\scripts.js",
+              "RelativeDocumentMoniker": "MyDatabase\\wwwroot\\js\\scripts.js",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\wwwroot\\js\\scripts.js",
+              "RelativeToolTip": "MyDatabase\\wwwroot\\js\\scripts.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA+wCIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-06T08:18:19.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "MyDatabase\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T18:42:07.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\Customer.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\Customer.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\Customer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAxwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T10:53:39.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\Service\\CartController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Book\\Service\\CartController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\Service\\CartController.cs",
+              "RelativeToolTip": "MyDatabase\\Views\\Book\\Service\\CartController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAA4wBgAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:55:38.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\CartItem.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\CartItem.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:56:09.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T13:41:42.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T13:38:33.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "MyDatabase\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "MyDatabase\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAMkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-27T18:09:28.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:04:07.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\Book.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\Book.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\Book.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T16:55:45.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\Category.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\Category.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:01:25.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T20:19:41.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Program.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Program.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Program.cs",
+              "RelativeToolTip": "MyDatabase\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T19:37:35.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\Order.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\Order.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T19:03:15.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T19:39:25.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BookDetails.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\BookDetails.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Book\\BookDetails.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\BookDetails.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Book\\BookDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T19:18:01.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:03:52.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AllBooks.cshtml.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\AllBooks.cshtml.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Book\\AllBooks.cshtml.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\AllBooks.cshtml.cs",
+              "RelativeToolTip": "MyDatabase\\Views\\Book\\AllBooks.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T18:41:59.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T20:05:40.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Views\\Books\\Create.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Books\\Create.cshtml",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Views\\Books\\Create.cshtml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-16T18:17:23.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAwwAwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:03:34.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T15:56:41.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\BookController.cs",
+              "RelativeToolTip": "MyDatabase\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAgwB4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T16:47:06.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAcwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-16T18:17:08.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T20:04:46.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T20:06:10.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BooksByCategory.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Shared\\BooksByCategory.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Shared\\BooksByCategory.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Shared\\BooksByCategory.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Shared\\BooksByCategory.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T12:24:01.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-16T18:16:54.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PhotoBook.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\PhotoBook.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\PhotoBook.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\PhotoBook.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\PhotoBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T18:11:46.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "MyDatabase\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:23:55.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Profile\\Profile.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Profile\\Profile.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Profile\\Profile.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Profile\\Profile.cshtml",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAUwM8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T17:21:17.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CategoryViewComponent.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\ViewComponents\\CategoryViewComponent.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\ViewComponents\\CategoryViewComponent.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\ViewComponents\\CategoryViewComponent.cs",
+              "RelativeToolTip": "MyDatabase\\Views\\ViewComponents\\CategoryViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:08:52.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MyDatabase\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAF8AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T16:04:10.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T16:07:43.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T16:09:32.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T19:56:35.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "MyDatabase\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:04:36.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\ProfileViewModel.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\ProfileViewModel.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T17:22:01.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T16:00:44.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "OrderViewModel.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\OrderViewModel.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\OrderViewModel.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\OrderViewModel.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\OrderViewModel.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:54:30.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T19:03:32.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T21:14:48.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\SeedData.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\Models\\SeedData.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Models\\SeedData.cs",
+              "RelativeToolTip": "MyDatabase\\Models\\SeedData.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:47:58.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T16:10:11.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "CategoryViewComponent.cs",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\ViewComponents\\CategoryViewComponent.cs",
+              "RelativeDocumentMoniker": "MyDatabase\\ViewComponents\\CategoryViewComponent.cs",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\ViewComponents\\CategoryViewComponent.cs",
+              "RelativeToolTip": "MyDatabase\\ViewComponents\\CategoryViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:05:48.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\Search.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Book\\Search.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\Search.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Book\\Search.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T17:05:43.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "SearchBooksByAuthor.cshtml",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\SearchBooksByAuthor.cshtml",
+              "RelativeDocumentMoniker": "MyDatabase\\Views\\Book\\SearchBooksByAuthor.cshtml",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\Views\\Book\\SearchBooksByAuthor.cshtml",
+              "RelativeToolTip": "MyDatabase\\Views\\Book\\SearchBooksByAuthor.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T16:48:39.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250330143404_InitialIdentity.cs",
+              "DocumentMoniker": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\Migrations\\20250330143404_InitialIdentity.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\Migrations\\20250330143404_InitialIdentity.cs",
+              "ToolTip": "C:\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\Migrations\\20250330143404_InitialIdentity.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\an_ka\\source\\repos\\MyDatabase\\MyDatabase\\Migrations\\20250330143404_InitialIdentity.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T14:34:04.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "MyDatabase.csproj",
+              "DocumentMoniker": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\MyDatabase.csproj",
+              "RelativeDocumentMoniker": "MyDatabase\\MyDatabase.csproj",
+              "ToolTip": "C:\\SQL2022\\otus-mssql-pushkareva\\HW20 - Project\\MyDatabase\\MyDatabase\\MyDatabase.csproj",
+              "RelativeToolTip": "MyDatabase\\MyDatabase.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-27T17:28:54.514Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

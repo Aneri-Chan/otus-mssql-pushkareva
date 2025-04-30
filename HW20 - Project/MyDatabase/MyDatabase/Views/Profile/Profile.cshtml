@@ -1,0 +1,207 @@
+﻿@model ProfileUpdateViewModel
+
+@{
+    ViewData["Title"] = "Личный кабинет";
+}
+
+<h2 style="text-align: center; color: #333;">Личный кабинет</h2>
+
+<!-- Сообщения об успехе/ошибке -->
+<div id="alertBox" style="text-align:center; margin-bottom: 15px;"></div>
+
+<!-- Основная форма -->
+<form asp-controller="Profile" asp-action="Update" method="post" id="updateForm"
+      style="display: flex; flex-direction: column; max-width: 320px; margin: auto; padding: 20px;">
+    @Html.AntiForgeryToken()
+
+    <input asp-for="CustomerName" placeholder="ФИО" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc;" />
+    <span asp-validation-for="CustomerName" style="color: red;"></span>
+
+    <input asp-for="Email" placeholder="Email" readonly
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; background-color: #f3f3f3;" />
+    <span asp-validation-for="Email" style="color: red;"></span>
+
+    <input asp-for="PhoneNumber" placeholder="Телефон" required
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc;" />
+    <span asp-validation-for="PhoneNumber" style="color: red;"></span>
+
+    <button class="btn-profile" type="submit"
+            style="background-color: #4D6160; color: white; padding: 12px; border: none; cursor: pointer; font-size: 16px;">
+        Сохранить изменения
+    </button>
+</form>
+
+<!-- Кнопка для раскрытия формы смены пароля -->
+<div style="text-align: center; margin-top: 20px;">
+    <button onclick="togglePasswordForm()" class="btn-profile"
+            style="background-color: #4D6160; color: white; padding: 12px; border: none; font-size: 16px;">
+        Изменить пароль
+    </button>
+</div>
+
+<!-- Форма смены пароля -->
+<form asp-controller="Profile" asp-action="ChangePassword" method="post" id="passwordForm"
+      style="display: none; flex-direction: column; max-width: 320px; margin: 20px auto; padding: 20px; border: 1px solid #ccc;">
+    @Html.AntiForgeryToken()
+
+    <input name="NewPassword" placeholder="Новый пароль" type="password"
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc;" />
+    <span data-valmsg-for="NewPassword" style="color: red;"></span>
+
+    <input name="ConfirmPassword" placeholder="Подтвердите пароль" type="password"
+           style="padding: 12px; margin-bottom: 10px; border: 1px solid #ccc;" />
+    <span data-valmsg-for="ConfirmPassword" style="color: red;"></span>
+
+    <button class="btn-profile" type="submit"
+            style="background-color: #4D6160; color: white; padding: 12px; border: none; font-size: 16px;">
+        Сменить пароль
+    </button>
+</form>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        function togglePasswordForm() {
+            const form = document.getElementById('passwordForm');
+            form.style.display = form.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        function showMessage(message, success = true) {
+            const alertBox = document.getElementById('alertBox');
+            alertBox.innerHTML = `<div style="color: ${success ? 'green' : 'red'};">${message}</div>`;
+        }
+
+        async function handleFormSubmit(formId, url) {
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+
+            form.querySelectorAll('span[data-valmsg-for], span[asp-validation-for]').forEach(span => span.textContent = '');
+
+            if (formId === 'passwordForm') {
+                const newPassword = form.querySelector('input[name="NewPassword"]').value;
+                const confirmPassword = form.querySelector('input[name="ConfirmPassword"]').value;
+
+                if (newPassword.length < 6) {
+                    form.querySelector('span[data-valmsg-for="NewPassword"]').textContent = 'Пароль должен содержать минимум 6 символов.';
+                    return;
+                }
+
+                if (newPassword !== confirmPassword) {
+                    form.querySelector('span[data-valmsg-for="ConfirmPassword"]').textContent = 'Пароли не совпадают.';
+                    return;
+                }
+            }
+
+            const response = await fetch(url, {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                showMessage(result.message, true);
+                if (formId === 'updateForm') {
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    form.reset();
+                    togglePasswordForm();
+                }
+            } else {
+                if (result.errors) {
+                    for (const key in result.errors) {
+                        const span = form.querySelector(`span[data-valmsg-for="${key}"], span[asp-validation-for="${key}"]`);
+                        if (span) {
+                            span.textContent = result.errors[key][0];
+                        }
+                    }
+                }
+                showMessage(result.message || 'Ошибка при сохранении.', false);
+            }
+        }
+
+        document.getElementById('updateForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            handleFormSubmit('updateForm', this.action);
+        });
+
+        document.getElementById('passwordForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            handleFormSubmit('passwordForm', this.action);
+        });
+
+                // ФИО: запрет ввода латиницы, цифр и спецсимволов, кроме пробела и дефиса
+        const nameInput = document.querySelector('input[name="CustomerName"]');
+        const nameSpan = document.querySelector('span[asp-validation-for="CustomerName"]');
+
+        // Блокируем нежелательные символы при вводе
+        nameInput.addEventListener('keydown', function (e) {
+            const allowed = /^[А-Яа-яЁё \-]$/;
+            const key = e.key;
+
+            // Разрешаем навигацию и удаление
+            if (
+                ['Backspace', 'ArrowLeft', 'ArrowRight', 'Delete', 'Tab'].includes(key) ||
+                (e.ctrlKey || e.metaKey) // Разрешить сочетания типа Ctrl+C
+            ) {
+                return;
+            }
+
+            if (!allowed.test(key)) {
+                e.preventDefault();
+            }
+        });
+
+        // Валидация при изменении значения
+        nameInput.addEventListener('input', function () {
+            const value = nameInput.value.trim();
+            const nameRegex = /^[А-Яа-яЁё \-]+$/;
+
+            if (value.length < 3) {
+                nameSpan.textContent = 'ФИО должно содержать минимум 3 символа.';
+            } else if (!nameRegex.test(value)) {
+                nameSpan.textContent = 'ФИО должно содержать только русские буквы.';
+            } else {
+                nameSpan.textContent = '';
+            }
+        });
+
+
+        // 🔵 Пароли: длина и совпадение
+        const newPassInput = document.querySelector('input[name="NewPassword"]');
+        const confirmPassInput = document.querySelector('input[name="ConfirmPassword"]');
+        const newPassSpan = document.querySelector('span[data-valmsg-for="NewPassword"]');
+        const confirmPassSpan = document.querySelector('span[data-valmsg-for="ConfirmPassword"]');
+
+        function validatePasswords() {
+            const newPassword = newPassInput.value;
+            const confirmPassword = confirmPassInput.value;
+
+            if (newPassword.length > 0 && newPassword.length < 6) {
+                newPassSpan.textContent = 'Пароль должен содержать минимум 6 символов.';
+            } else {
+                newPassSpan.textContent = '';
+            }
+
+            if (confirmPassword.length > 0 && newPassword !== confirmPassword) {
+                confirmPassSpan.textContent = 'Пароли не совпадают.';
+            } else {
+                confirmPassSpan.textContent = '';
+            }
+        }
+
+        newPassInput.addEventListener('input', validatePasswords);
+        confirmPassInput.addEventListener('input', validatePasswords);
+    </script>
+    }
+
+
+
+<style>
+    .btn-profile:hover {
+        background-color: #31434e !important;
+    }
+</style>
